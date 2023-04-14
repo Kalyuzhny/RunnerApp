@@ -1,0 +1,25 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Runner.Api/bin/Debug/net7.0
+/.vs
+/obj/Docker
+/Runner/obj
+/Runner.Api/obj/Debug/net7.0
+/Runner.Api/obj
+/Runner.Domain/bin/Debug/net7.0
+/Runner.Domain/obj/Debug/net7.0
+/Runner.Domain/obj
+/Runner.Infstrastructure/bin/Debug/net7.0
+/Runner.Infstrastructure/obj/Debug/net7.0
+/Runner.Infstrastructure/obj
+/Tournament.Api/bin/Debug/net7.0
+/Tournament.Api/obj/Debug/net7.0
+/Tournament.Api/obj
+/Tournament.Domain/bin/Debug/net7.0
+/Tournament.Domain/obj/Debug/net7.0
+/Tournament.Domain/obj
+/Tournament.Infstrastructure/bin/Debug/net7.0
+/Tournament.Infstrastructure/obj/Debug/net7.0
+/Tournament.Infstrastructure/obj

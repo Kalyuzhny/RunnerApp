@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  runner.api:
+    image: ${DOCKER_REGISTRY-}runnerapi
+    build:
+      context: .
+      dockerfile: Runner.Api/Dockerfile
+
+  tournament.api:
+    image: ${DOCKER_REGISTRY-}runnerapi
+    build:
+      context: .
+      dockerfile: Tournament.Api/Dockerfile
