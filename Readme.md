@@ -1,6 +1,6 @@
 ## Solution description
 
-**Please note it is not a fully functioning prototype. It was created just to demonstrate an ability to build modern microservices by using best practices, DDD  principles and design patterns**
+**Please note it is not a fully functioning prototype. It was created just to demonstrate an ability to build modern microservices by using best practices, SOLID, DDD  principles and design patterns**
 
 #### Technologies used:
 - .NET 7
