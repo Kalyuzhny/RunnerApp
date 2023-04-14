@@ -13,8 +13,8 @@
 
 ### Domain
 I enjoy running a lot. That's the reason I choose this domain. An application consist of 2 sub-domains:
-- Runner - incapsulate data for different people who likes running.
-- Tournament - incapsulate data for different tournaments, including their participants (runners).
+- Runner - incapsulates data for different people who likes running.
+- Tournament - incapsulates data for different tournaments, including their participants (runners).
 
 ### Architecture definition
 Solution consist of 2 microservices build with DDD practices with clearly separated  bounded context: Runner and Tournament.
@@ -40,8 +40,9 @@ Each of them have predefined architecture by using of 3 components:
 - Retries. When making a call from Tournament.APi to Runner.Api - Polly retries is used. It is needed in case of not stable network to increase availability and fault tollerance. 
 - Saga. Very simple Saga implementation. Please have a look at AddTurnamentsAsync action in Tournament controller. An application stores Tournament model to DB, then send request to AddTournamentRunners. In case if for some reason Runners was not added, The application execute compensational transaction to delete tournament from database.   
 - Entity Framework code first approach. DB structure is defined in DB context and type configurations. 
+- Dependency injections. DI are done by embedded in .net dependency injector. No external tools like Ninject, Autofac or Castle Windsor are used. 
 - Swagger. Api is automatically documented by swagger. it is easier for clients to use it. 
-- Docker and Docker componse support. It is much easier to deploy solution and can be easilly used to provision development environment on localhost. 
+- Docker and Docker compose support. It is much easier to deploy solution and can be easilly used to provision development environment on localhost. 
 
 ### What is not covered here (but has to be supported in real microservice application):
 - security: authentication and authorization. Currently APIs are public. To secure it I would use bearer tokens and some OAuth 2 identity provider. 
